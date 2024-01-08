@@ -1,0 +1,5 @@
+{
+  "https://omelegg.com/wp-content/themes/yootheme/cache/c5/banner-c5454ddd.webp": { "integrity": "sha512-VHEbHmqw2K7qI8YJWG8O5aCuPeEOfh7+ejPy3xJCDhtL1pCsDvAEIv1oq5HejCqmAUe+svrIPEc7t9/R/i4e2g==", "contentType": "image/webp" },
+  "https://themer.sanity.build/api/hues?preset=stereofidelic": { "integrity": "sha512-Q+x2yRUjB0gQiqNYuiqzQDIOFMQe51XOOoDrFb5yH0LMPmtfh+CEGA9uIuV4yVA1VLsNgiRJTM79cYwXo98t3Q==", "contentType": "application/javascript; charset=utf-8" },
+  "version": 1
+}
