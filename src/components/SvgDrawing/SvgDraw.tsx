@@ -2,6 +2,7 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import ContentBox1 from "./ContentBox1";
+import ContentBox2 from "./ContentBox2";
 
 function SvgDraw() {
   const frameRef = useRef(null);
@@ -128,10 +129,7 @@ function SvgDraw() {
 
           <ContentBox1 />
 
-          {/* Second content box */}
-          <div className="item-center inline-block w-[30%] justify-center p-4">
-            <p>Second Content Box</p>
-          </div>
+          <ContentBox2 />
         </motion.div>
       </div>
       <div className="h-[100vh] bg-eggWhite" />
