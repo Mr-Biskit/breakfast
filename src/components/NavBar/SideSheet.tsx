@@ -21,7 +21,7 @@ function SideSheet() {
     <nav className="flex items-center space-x-2">
       <Sheet>
         <SheetTrigger>
-          <Menu size={24} />
+          <Menu size={24} color="#4E260B" />
         </SheetTrigger>
         <SheetContent className="bg-eggYolk px-0 py-10 lg:w-1/2" side={"left"}>
           <nav className="mt-20 flex w-full flex-col">
