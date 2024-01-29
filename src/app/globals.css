@@ -63,6 +63,19 @@ html {
     );
 }
 
+.menu-section-header {
+  clip-path: polygon(
+    40px 0,
+    calc(100% - 40px) 0,
+    100% 40px,
+    100% 100%,
+    calc(100% - 40px) 100%,
+    40px 100%,
+    0 100%,
+    0 40px
+  );
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -28,7 +28,9 @@ module.exports = {
         eggYolk: "#FFA500",
         eggShell: "#F2E8D7",
         barnWood: "#8B4513",
+        darkWood: "#4E260B",
         farmGreen: "#0D3026",
+
         skyBlue: "#87CEEB",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

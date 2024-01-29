@@ -1,31 +1,25 @@
-import { defineConfig } from "sanity";
-import { deskTool } from "sanity/desk";
-import { visionTool } from "@sanity/vision";
-import { schemaTypes } from "./schemas";
-import StudioNavBar from "./src/app/(admin)/studio/components/StudioNavBar";
-import Logo from "./src/app/(admin)/studio/components/Logo";
-import { theme } from "https://themer.sanity.build/api/hues?preset=stereofidelic";
+/**
+ * This configuration is used to for the Sanity Studio that’s mounted on the `/app/studio/[[...index]]/page.tsx` route
+ */
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
+import {visionTool} from '@sanity/vision'
+import {defineConfig} from 'sanity'
+import {structureTool} from 'sanity/structure'
+
+// Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
+import {apiVersion, dataset, projectId} from './sanity/env'
+import {schema} from './sanity/schema'
 
 export default defineConfig({
-  basePath: "/studio",
-  name: "Egg_Content_Studio",
-  title: "Egg Content Studio",
+  basePath: '/studio',
   projectId,
   dataset,
-
-  plugins: [deskTool(), visionTool()],
-
-  schema: {
-    types: schemaTypes,
-  },
-  studio: {
-    components: {
-      logo: Logo,
-      navbar: StudioNavBar,
-    },
-  },
-  theme,
-});
+  // Add and edit the content schema in the './sanity/schema' folder
+  schema,
+  plugins: [
+    structureTool(),
+    // Vision is a tool that lets you query your content with GROQ in the studio
+    // https://www.sanity.io/docs/the-vision-plugin
+    visionTool({defaultApiVersion: apiVersion}),
+  ],
+})
