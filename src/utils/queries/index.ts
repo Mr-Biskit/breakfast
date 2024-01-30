@@ -32,3 +32,21 @@ query fetchAllMenuData {
     }
     }
 `;
+
+export const FETCH_ALL_OPENING_HOURS_DATA = ` 
+query fetchAllOpeningHoursData {
+  allOpeningHours(limit: 1) {
+    title,
+    weekdayHours {
+      days
+      openTime
+      closeTime
+    }
+    weekendHours {
+      days
+      openTime
+      closeTime
+    }
+  }
+}
+`;

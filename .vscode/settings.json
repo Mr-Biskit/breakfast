@@ -9,6 +9,7 @@
     "Omelegg",
     "omeleggs",
     "portabletext",
-    "tailwindcss"
+    "tailwindcss",
+    "tanstack"
   ]
 }
