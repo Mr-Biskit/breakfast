@@ -41,7 +41,7 @@ function SvgDraw() {
             <path
               d="M97 109V609M25.5 37C25.5 37 96.5 118.5 168 37M2 47C2 47 96.1684 154.81 191 47"
               stroke="#09201C"
-              stroke-width="6"
+              strokeWidth="6"
             />
           </svg>
         </div>
@@ -63,7 +63,7 @@ function SvgDraw() {
             strokeWidth={3}
             stroke={"#09201C"}
           />
-          <path d="M644 0.5V246" stroke="#09201C" stroke-width="3" />
+          <path d="M644 0.5V246" stroke="#09201C" strokeWidth="3" />
           <motion.path
             d="M29 325C78.5 325 78.5 275.5 78.5 275.5H580C580 325 629.5 325 629.5 325V666.5C580 666.5 580 716 580 716H78.5C78.5 666.5 29 666.5 29 666.5V325Z"
             style={{ pathLength: transformedScrollYProgress }}

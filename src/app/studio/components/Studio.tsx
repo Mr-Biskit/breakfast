@@ -3,7 +3,7 @@
 import { NextStudio } from "next-sanity/studio";
 import { StudioProvider, StudioLayout } from "sanity";
 
-import config from "../../../../../sanity.config";
+import config from "../../../../sanity.config";
 
 export function Studio() {
   return (

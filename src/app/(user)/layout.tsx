@@ -2,6 +2,8 @@ import Header from "@/src/components/NavBar/NavBar";
 import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import ReactQueryClientProvider from "@/src/utils/lib/ReactQueryClientProvider";
+import ReactLenisProvider from "@/src/utils/lib/ReactLenisProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        {children}
-      </body>
-    </html>
+    <ReactQueryClientProvider>
+      <ReactLenisProvider>
+        <html lang="en">
+          <body className={inter.className}>
+            <Header />
+            {children}
+          </body>
+        </html>
+      </ReactLenisProvider>
+    </ReactQueryClientProvider>
   );
 }
